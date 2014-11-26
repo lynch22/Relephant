@@ -10,9 +10,9 @@ library(digest);
 
 
 ##consumer key
-twit_consumer_key='YfDH0jjl5qLegTNGMeJgeg';
+twit_consumer_key='###';
 ##consumer secret
-twit_consumer_secret='332s9Gp8MK3wfrMztqeOq4ebnb6ZN2VVm2m4ALsBI';
+twit_consumer_secret='###';
 ##request token URL
 twit_request_url='https://api.twitter.com/oauth/request_token';
 ##access token URL
