@@ -30,12 +30,10 @@ score.sentiment = function(sentences, pos.words, neg.words, exc.words, .progress
 		# and convert to lower case:
 		sentence = tolower(sentence)
 
-
 		# split into words. str_split is in the stringr package
 		word.list = str_split(sentence, '\\s+')
 		# sometimes a list() is one level of hierarchy too much
 		words = unlist(word.list)
-
 
                 # exclude stop words
 #                check <- match(words, exc.words)
@@ -52,7 +50,6 @@ score.sentiment = function(sentences, pos.words, neg.words, exc.words, .progress
 		# we just want a TRUE/FALSE:
 		pos.matches = !is.na(pos.matches)
 		neg.matches = !is.na(neg.matches)
-
 
 		# and conveniently enough, TRUE/FALSE will be treated as 1/0 by sum():
 		score = sum(pos.matches) - sum(neg.matches)
